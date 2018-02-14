@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.25em;
+}
+h4 {
+  font-size: 2em;
+}
+h5 {
+  font-size: 1.5em;
+}
+
+/* Exercise Styles */
+.block {
+  border: 1em solid black;
+  float: left;
+  min-height: 30em;
+  width: 100%;
+}
+
+/* Mobile first code */
+.block:first-child{
+  background:white;
+  color:red;
+}
+
+.block--sextuple {
+  background: lightblue;
+}
+
+.block--quadruple {
+  background: orange;
+}
+
+.block--triple {
+  background: limegreen;
+}
+
+.block--double {
+  background: pink;
+}
+
+/* Media query - tablet / iPad */
+@media screen and (min-width: 768px) {
+  .block--sextuple{
+    display: inline-block;
+    float:left;
+    width:33.33%;
+  }
+  .block--quadruple{
+    display: inline-block;
+    float:left;
+    width:50%;
+  }
+  .block--triple{
+    display: inline-block;
+    float:left;
+    width:50%;
+}
+  .block--triple:last-child{
+  display: inline-block;
+  float:left;
+  width:100%;
+}
+.block--double{
+  display: inline-block;
+  float:left;
+  width:50%;
+}
+
+/* Media query - desktop */
+@media screen and (min-width: 1024px) {
+  .block--sextuple{
+    display: inline-block;
+    float:left;
+    width:16.66%;
+}
+  .block--quadruple{
+    display: inline-block;
+    float:left;
+    width:25%;
+}
+  .block--triple{
+    display: inline-block;
+    float:left;
+    width:33.3%;
+}
+
+  .block--triple:last-child{
+    display: inline-block;
+    float:left;
+    width:33.33%;
+}

@@ -1,0 +1,28 @@
+1. The layout needs to work as follows (look at the image for reference)
+
+1a .block--sextuple -
+  100% width on mobile
+  3 in a row on tablet
+  6 in a row on desktop
+
+1b .block--quadruple -
+  100% width on mobile
+  2 in a row on tablet
+  4 in a row on desktop
+
+1c .block--triple -
+  100% width on mobile
+  the FIRST TWO blocks 2 in a row on tablet
+  the LAST block 100% width on tablet (think pseudo-classes...)
+  3 in a row on desktop
+
+1d .block--double -
+  100% width on mobile
+  two in a row on tablet AND desktop (you only need to enter this in one place)
+
+2. Then use pseudo-classes to turn the background of FIRST child of each block type white, and the text colour to be red.
+  -- HINT: You will need to use the parent class (the row) to do the above
+
+3. Comment out your code and try to reverse this to be desktop first so that you understand the difference between breakpoint syntax
+  - Think... mobile first (desktop second) uses MIN-WIDTH 
+  - Think... desktop first (mobile second) uses MAX-WIDTH
